@@ -1,21 +1,4 @@
-
-def valid_move?(board, index)
-  position = index.to_i - 1
-  if (position_taken?(board, index)) == false && (position.between?(0, 8) == true)
-   return true
- else
-    return false
- end
-end
-
-def empty_board_valid_move(position)
-  if position.between?(0, 8) == true
-    return true
-  else
-    return false
-  end
-end
-
+#position_take method for use as helper method
 def position_taken?(board, index)
  if (board[index] ==  " " || board[index] == "" || board[index] == nil)
   false
@@ -23,21 +6,3 @@ def position_taken?(board, index)
   true
  end
 end
-
-
-#
-#   def on_board?(num)
-#     if num.between?(0, 8) == true
-#       return true
-#     else
-#       return false
-#     end
-#   end
-#
-# def valid_move?(board, index)
-#   if (position_taken?(board, index)) == false && (on_board?(index) == true)
-#     return true
-#   else
-#     return false
-#   end
-# end
