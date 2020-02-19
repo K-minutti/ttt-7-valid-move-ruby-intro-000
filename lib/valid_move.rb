@@ -7,7 +7,7 @@ def on_board(index_num) #defined as method separately in order to use in def val
 end
 
 def valid_move?(board, index)
-  if (position_take?(board, index)) == false && (on_board?(index) == true)
+  if (position_taken?(board, index)) == false && (on_board?(index) == true)
     return true
   else
     return false
