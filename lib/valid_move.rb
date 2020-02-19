@@ -1,4 +1,4 @@
-def on_board(index_num) #defined as method separately in order to use in def valid_move method more effectively
+def on_board?(index_num) #defined as method separately in order to use in def valid_move method more effectively
   if  index_num.between?(0,8) == true
     return true
   else
