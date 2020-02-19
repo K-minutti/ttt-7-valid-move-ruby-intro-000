@@ -1,18 +1,19 @@
 
- #if test.between?(0, 8) == true || position_taken?(board, test) == false
-  #true
+# use a if method or boolean expression to control return value of method
+#use a helper method- a method within antoher method- to make my code more readable
 
-def valid_move?(board, index)
-  position = index.to_i - 1
-  if position.between?(0,8)  && position_taken?(board, position) == true
-  end
-end
+# def position_taken?(board, index)
+#  if (board[index] ==  " " || board[index] == "" || board[index] == nil)
+#   false
+#  else
+#   true
+#  end
+# end
+#
+# def valid_move(board, index)
+#   position taken? ==
 
 
-def position_taken?(board, index)
-  if (board[index] == " " || board[index] == "" || board[[index] == nil])
-    false
-  else
-    true
-  end
-end
+#There are two condidtions that need to be met in order for this method to return true
+#1.that the position is on the board
+#2.that the position is not taken.
