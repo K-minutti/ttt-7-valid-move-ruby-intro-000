@@ -10,8 +10,8 @@
 #  end
 # end
 #
-# def valid_move(board, index)
-#   position taken? ==
+def valid_move?(board, index)
+end  
 
 
 #There are two condidtions that need to be met in order for this method to return true
