@@ -1,7 +1,7 @@
 #
 # def valid_move?(board, index)
 #   position = index.to_i - 1
-#   if position_taken?(board, index) && position.between?(0,8)
+#   if (position_taken?(board, index)) == false && position.between?(0,8) == true
 #    return true
 #   else
 #    return false
@@ -17,13 +17,6 @@
 # end
 
 
-  def position_taken?(array, ind)
-    if array[ind] == " " || array[ind] == "" || array[ind] == nil
-      return false
-    else
-      return true
-    end
-  end
 
   def on_board?(num)
     if num.between?(0, 8) == true
@@ -32,7 +25,7 @@
       return false
     end
   end
-  
+
 def valid_move?(board, index)
   if (position_taken?(board, index)) == false && (on_board?(index) == true)
     return true
